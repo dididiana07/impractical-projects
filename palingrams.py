@@ -15,7 +15,7 @@ def palingram(word: str, dictionary_words: dict):
     palingram_lst = []
     reversed_word = word[::-1]
     for w in dictionary_words:
-        if reversed_word in w:
+        if reversed_word in w and len(reversed_word) > 2:
             palingram_lst.append(w)
     return palingram_lst
 
